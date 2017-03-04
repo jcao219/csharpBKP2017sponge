@@ -8,6 +8,8 @@ namespace Hello
             System.Console.Write("S: ");
             string input = System.Console.ReadLine();
             System.Console.WriteLine("H: {0}", hasher.Hash(input));
+            var breaker = new Breaker(input);
+            breaker.Run(15000000);
         }
     }
 }
